@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 08.06.2025 19:35:50
+// Create Date: 10.11.2025 19:15:08
 // Design Name: 
-// Module Name: half_adder
+// Module Name: logic_gate_tb
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -18,15 +18,19 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-module half_adder (
-    input wire a,
-    input wire b,
-    output wire sum,
-    output wire carry
-);
 
-assign sum = a ^ b;    // XOR for sum
-assign carry = a & b;  // AND for carry
+
+module logic_gate_tb(    );
+reg a,b;
+wire y0,y1,y2;
+logic_gate uut(a,b,y0,y1,y2);
+initial
+begin
+    a=0; b=0;
+#10 a=0; b=1;
+#10 a=1; b=0;
+#10 a=1; b=1;
+#10 $finish;
+end
 
 endmodule
-

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Nov 10 19:58:00 2025
+# Process ID         : 7516
+# Current directory  : C:/programming/Codebase/vivado/Full_adder/Full_adder.runs/synth_1
+# Command line       : vivado.exe -log full_adder.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source full_adder.tcl
+# Log file           : C:/programming/Codebase/vivado/Full_adder/Full_adder.runs/synth_1/full_adder.vds
+# Journal file       : C:/programming/Codebase/vivado/Full_adder/Full_adder.runs/synth_1\vivado.jou
+# Running On         : Arjun-laptop
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-1235U
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 12
+# Host memory        : 8242 MB
+# Swap memory        : 9663 MB
+# Total Virtual      : 17905 MB
+# Available Virtual  : 5920 MB
+#-----------------------------------------------------------
+source full_adder.tcl -notrace
