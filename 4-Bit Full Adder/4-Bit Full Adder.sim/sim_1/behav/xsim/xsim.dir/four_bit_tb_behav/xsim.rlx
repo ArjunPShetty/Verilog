@@ -1,0 +1,12 @@
+
+{ 
+    crc :  12064302511972882442  , 
+    ccp_crc :  0  , 
+    cmdline : " --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_14 -L c_reg_fd_v12_0_10 -L xbip_dsp48_wrapper_v3_0_6 -L xbip_pipe_v3_0_10 -L c_addsub_v12_0_19 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot four_bit_tb_behav xil_defaultlib.four_bit_tb xil_defaultlib.glbl" , 
+    buildDate : "Nov  8 2024" , 
+    buildTime : "22:36:57" , 
+    linkCmd : "C:\\AMDvivado\\Vivado\\2024.2\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/four_bit_tb_behav/xsimk.exe\"   \"xsim.dir/four_bit_tb_behav/obj/xsim_0.win64.obj\" \"xsim.dir/four_bit_tb_behav/obj/xsim_1.win64.obj\" -L\"C:\\AMDvivado\\Vivado\\2024.2\\lib\\win64.o\" -lxv_simulator_kernel   -lxv_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/programming/testcode/vivado/4-Bit Full Adder/4-Bit Full Adder.srcs/sources_1/new/four_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/programming/testcode/vivado/4-Bit Full Adder/4-Bit Full Adder.srcs/sim_1/new/four_bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/programming/testcode/vivado/4-Bit Full Adder/4-Bit Full Adder.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/programming/testcode/vivado/4-Bit Full Adder/4-Bit Full Adder.gen/sources_1/ip/c_addsub_0/sim/c_addsub_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'c_addsub_0'
