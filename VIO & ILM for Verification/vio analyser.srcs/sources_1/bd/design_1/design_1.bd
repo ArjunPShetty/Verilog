@@ -1,0 +1,152 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xBB49FA3234AD1C0F",
+      "device": "xc7a35tftg256-1",
+      "gen_directory": "../../../../vio analyser.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "fulladder_0": "",
+      "vio_0": "",
+      "ila_0": ""
+    },
+    "ports": {
+      "clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "fulladder_0": {
+        "vlnv": "xilinx.com:module_ref:fulladder:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_fulladder_0_0",
+        "xci_path": "ip\\design_1_fulladder_0_0\\design_1_fulladder_0_0.xci",
+        "inst_hier_path": "fulladder_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "fulladder",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "c": {
+            "direction": "I"
+          },
+          "sum": {
+            "direction": "O"
+          },
+          "carry": {
+            "direction": "O"
+          }
+        }
+      },
+      "vio_0": {
+        "vlnv": "xilinx.com:ip:vio:3.0",
+        "ip_revision": "26",
+        "xci_name": "design_1_vio_0_0",
+        "xci_path": "ip\\design_1_vio_0_0\\design_1_vio_0_0.xci",
+        "inst_hier_path": "vio_0",
+        "parameters": {
+          "C_NUM_PROBE_IN": {
+            "value": "2"
+          },
+          "C_NUM_PROBE_OUT": {
+            "value": "3"
+          }
+        }
+      },
+      "ila_0": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "ip_revision": "16",
+        "xci_name": "design_1_ila_0_0",
+        "xci_path": "ip\\design_1_ila_0_0\\design_1_ila_0_0.xci",
+        "inst_hier_path": "ila_0",
+        "parameters": {
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "5"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Net": {
+        "ports": [
+          "vio_0/probe_out1",
+          "ila_0/probe1",
+          "fulladder_0/b"
+        ]
+      },
+      "Net1": {
+        "ports": [
+          "vio_0/probe_out0",
+          "ila_0/probe0",
+          "fulladder_0/a"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "ila_0/clk",
+          "vio_0/clk"
+        ]
+      },
+      "fulladder_0_carry": {
+        "ports": [
+          "fulladder_0/carry",
+          "vio_0/probe_in1",
+          "ila_0/probe4"
+        ]
+      },
+      "fulladder_0_sum": {
+        "ports": [
+          "fulladder_0/sum",
+          "vio_0/probe_in0",
+          "ila_0/probe3"
+        ]
+      },
+      "vio_0_probe_out2": {
+        "ports": [
+          "vio_0/probe_out2",
+          "fulladder_0/c",
+          "ila_0/probe2"
+        ]
+      }
+    }
+  }
+}

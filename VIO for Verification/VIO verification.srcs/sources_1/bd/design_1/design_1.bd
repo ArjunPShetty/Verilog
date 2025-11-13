@@ -1,0 +1,112 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xBB49FA3234AD1C0F",
+      "device": "xc7a35tftg256-1",
+      "gen_directory": "../../../../VIO verification.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "gates_0": "",
+      "vio_0": ""
+    },
+    "ports": {
+      "clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "gates_0": {
+        "vlnv": "xilinx.com:module_ref:gates:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_gates_0_0",
+        "xci_path": "ip\\design_1_gates_0_0\\design_1_gates_0_0.xci",
+        "inst_hier_path": "gates_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "gates",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "y": {
+            "direction": "O"
+          }
+        }
+      },
+      "vio_0": {
+        "vlnv": "xilinx.com:ip:vio:3.0",
+        "ip_revision": "26",
+        "xci_name": "design_1_vio_0_0",
+        "xci_path": "ip\\design_1_vio_0_0\\design_1_vio_0_0.xci",
+        "inst_hier_path": "vio_0",
+        "parameters": {
+          "C_NUM_PROBE_IN": {
+            "value": "1"
+          },
+          "C_NUM_PROBE_OUT": {
+            "value": "2"
+          }
+        }
+      }
+    },
+    "nets": {
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "vio_0/clk"
+        ]
+      },
+      "gates_0_y": {
+        "ports": [
+          "gates_0/y",
+          "vio_0/probe_in0"
+        ]
+      },
+      "vio_0_probe_out0": {
+        "ports": [
+          "vio_0/probe_out0",
+          "gates_0/a"
+        ]
+      },
+      "vio_0_probe_out1": {
+        "ports": [
+          "vio_0/probe_out1",
+          "gates_0/b"
+        ]
+      }
+    }
+  }
+}

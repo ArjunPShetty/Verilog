@@ -1,7 +1,0 @@
-Running: xsim.dir/four_bit_tb_behav/xsimk.exe -simmode gui -wdb four_bit_tb_behav.wdb -simrunnum 0 -socket 65037
-Design successfully loaded
-Design Loading Memory Usage: 29756 KB (Peak: 29756 KB)
-Design Loading CPU Usage: 562 ms
-Simulation completed
-Simulation Memory Usage: 30448 KB (Peak: 30448 KB)
-Simulation CPU Usage: 609 ms
