@@ -1,0 +1,181 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xBB49FA3234AD1C0F",
+      "device": "xc7a35tftg256-1",
+      "gen_directory": "../../../../full_adder.gen/sources_1/bd/full_adder",
+      "name": "full_adder",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "c_addsub_0": "",
+      "vio_0": "",
+      "ila_0": ""
+    },
+    "ports": {
+      "clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "full_adder_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "c_addsub_0": {
+        "vlnv": "xilinx.com:ip:c_addsub:12.0",
+        "ip_revision": "19",
+        "xci_name": "full_adder_c_addsub_0_0",
+        "xci_path": "ip\\full_adder_c_addsub_0_0\\full_adder_c_addsub_0_0.xci",
+        "inst_hier_path": "c_addsub_0",
+        "parameters": {
+          "A_Type": {
+            "value": "Unsigned"
+          },
+          "A_Width": {
+            "value": "8"
+          },
+          "B_Type": {
+            "value": "Unsigned"
+          },
+          "B_Value": {
+            "value": "00000000"
+          },
+          "B_Width": {
+            "value": "8"
+          },
+          "CE": {
+            "value": "false"
+          },
+          "C_In": {
+            "value": "true"
+          },
+          "C_Out": {
+            "value": "true"
+          },
+          "Latency": {
+            "value": "1"
+          },
+          "Out_Width": {
+            "value": "8"
+          }
+        }
+      },
+      "vio_0": {
+        "vlnv": "xilinx.com:ip:vio:3.0",
+        "ip_revision": "26",
+        "xci_name": "full_adder_vio_0_0",
+        "xci_path": "ip\\full_adder_vio_0_0\\full_adder_vio_0_0.xci",
+        "inst_hier_path": "vio_0",
+        "parameters": {
+          "C_NUM_PROBE_IN": {
+            "value": "2"
+          },
+          "C_NUM_PROBE_OUT": {
+            "value": "3"
+          },
+          "C_PROBE_IN0_WIDTH": {
+            "value": "8"
+          },
+          "C_PROBE_OUT0_WIDTH": {
+            "value": "8"
+          },
+          "C_PROBE_OUT1_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
+      "ila_0": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "ip_revision": "16",
+        "xci_name": "full_adder_ila_0_0",
+        "xci_path": "ip\\full_adder_ila_0_0\\full_adder_ila_0_0.xci",
+        "inst_hier_path": "ila_0",
+        "parameters": {
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "5"
+          },
+          "C_PROBE0_WIDTH": {
+            "value": "8"
+          },
+          "C_PROBE1_WIDTH": {
+            "value": "8"
+          },
+          "C_PROBE3_WIDTH": {
+            "value": "8"
+          }
+        }
+      }
+    },
+    "nets": {
+      "c_addsub_0_C_OUT": {
+        "ports": [
+          "c_addsub_0/C_OUT",
+          "vio_0/probe_in1",
+          "ila_0/probe4"
+        ]
+      },
+      "c_addsub_0_S": {
+        "ports": [
+          "c_addsub_0/S",
+          "vio_0/probe_in0",
+          "ila_0/probe3"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "vio_0/clk",
+          "c_addsub_0/CLK",
+          "ila_0/clk"
+        ]
+      },
+      "vio_0_probe_out0": {
+        "ports": [
+          "vio_0/probe_out0",
+          "c_addsub_0/A",
+          "ila_0/probe0"
+        ]
+      },
+      "vio_0_probe_out1": {
+        "ports": [
+          "vio_0/probe_out1",
+          "c_addsub_0/B",
+          "ila_0/probe1"
+        ]
+      },
+      "vio_0_probe_out2": {
+        "ports": [
+          "vio_0/probe_out2",
+          "c_addsub_0/C_IN",
+          "ila_0/probe2"
+        ]
+      }
+    }
+  }
+}
