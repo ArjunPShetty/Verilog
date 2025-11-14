@@ -1,0 +1,88 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xFC69B553FC69B553",
+      "device": "xc7a35tftg256-1",
+      "gen_directory": "../../../../and gate.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "and_gate_0": "",
+      "xlconstant_0": "",
+      "xlconstant_1": ""
+    },
+    "ports": {
+      "y_0": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "and_gate_0": {
+        "vlnv": "xilinx.com:module_ref:and_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_and_gate_0_0",
+        "xci_path": "ip\\design_1_and_gate_0_0\\design_1_and_gate_0_0.xci",
+        "inst_hier_path": "and_gate_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "and_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "y": {
+            "direction": "O"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "design_1_xlconstant_0_0",
+        "xci_path": "ip\\design_1_xlconstant_0_0\\design_1_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0"
+      },
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "design_1_xlconstant_0_1",
+        "xci_path": "ip\\design_1_xlconstant_0_1\\design_1_xlconstant_0_1.xci",
+        "inst_hier_path": "xlconstant_1",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "1"
+          }
+        }
+      }
+    },
+    "nets": {
+      "and_gate_0_y": {
+        "ports": [
+          "and_gate_0/y",
+          "y_0"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "and_gate_0/a"
+        ]
+      },
+      "xlconstant_1_dout": {
+        "ports": [
+          "xlconstant_1/dout",
+          "and_gate_0/b"
+        ]
+      }
+    }
+  }
+}

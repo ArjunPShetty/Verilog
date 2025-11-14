@@ -1,0 +1,171 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xFC69B553FC69B553",
+      "device": "xc7a35tftg256-1",
+      "gen_directory": "../../../../Combinational Logic.gen/sources_1/bd/blockdesign",
+      "name": "blockdesign",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "andgate_0": "",
+      "andgate_1": "",
+      "andgate_2": "",
+      "xlconstant_0": "",
+      "xlconstant_1": "",
+      "xlconstant_2": "",
+      "xlconstant_3": ""
+    },
+    "ports": {
+      "y_0": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "andgate_0": {
+        "vlnv": "xilinx.com:module_ref:andgate:1.0",
+        "ip_revision": "1",
+        "xci_name": "blockdesign_andgate_0_0",
+        "xci_path": "ip\\blockdesign_andgate_0_0\\blockdesign_andgate_0_0.xci",
+        "inst_hier_path": "andgate_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "andgate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "y": {
+            "direction": "O"
+          }
+        }
+      },
+      "andgate_1": {
+        "vlnv": "xilinx.com:module_ref:andgate:1.0",
+        "ip_revision": "1",
+        "xci_name": "blockdesign_andgate_1_0",
+        "xci_path": "ip\\blockdesign_andgate_1_0\\blockdesign_andgate_1_0.xci",
+        "inst_hier_path": "andgate_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "andgate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "y": {
+            "direction": "O"
+          }
+        }
+      },
+      "andgate_2": {
+        "vlnv": "xilinx.com:module_ref:andgate:1.0",
+        "ip_revision": "1",
+        "xci_name": "blockdesign_andgate_0_1",
+        "xci_path": "ip\\blockdesign_andgate_0_1\\blockdesign_andgate_0_1.xci",
+        "inst_hier_path": "andgate_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "andgate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "y": {
+            "direction": "O"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "blockdesign_xlconstant_0_0",
+        "xci_path": "ip\\blockdesign_xlconstant_0_0\\blockdesign_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0"
+      },
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "blockdesign_xlconstant_0_1",
+        "xci_path": "ip\\blockdesign_xlconstant_0_1\\blockdesign_xlconstant_0_1.xci",
+        "inst_hier_path": "xlconstant_1"
+      },
+      "xlconstant_2": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "blockdesign_xlconstant_0_2",
+        "xci_path": "ip\\blockdesign_xlconstant_0_2\\blockdesign_xlconstant_0_2.xci",
+        "inst_hier_path": "xlconstant_2"
+      },
+      "xlconstant_3": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "blockdesign_xlconstant_0_3",
+        "xci_path": "ip\\blockdesign_xlconstant_0_3\\blockdesign_xlconstant_0_3.xci",
+        "inst_hier_path": "xlconstant_3"
+      }
+    },
+    "nets": {
+      "andgate_0_y": {
+        "ports": [
+          "andgate_0/y",
+          "andgate_2/b"
+        ]
+      },
+      "andgate_1_y": {
+        "ports": [
+          "andgate_1/y",
+          "andgate_2/a"
+        ]
+      },
+      "andgate_2_y": {
+        "ports": [
+          "andgate_2/y",
+          "y_0"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "andgate_1/a"
+        ]
+      },
+      "xlconstant_1_dout": {
+        "ports": [
+          "xlconstant_1/dout",
+          "andgate_1/b"
+        ]
+      },
+      "xlconstant_2_dout": {
+        "ports": [
+          "xlconstant_2/dout",
+          "andgate_0/a"
+        ]
+      },
+      "xlconstant_3_dout": {
+        "ports": [
+          "xlconstant_3/dout",
+          "andgate_0/b"
+        ]
+      }
+    }
+  }
+}
