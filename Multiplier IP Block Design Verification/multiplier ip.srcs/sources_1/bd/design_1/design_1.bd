@@ -1,0 +1,110 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x8B0180F08B0180F",
+      "device": "xc7a35tftg256-1",
+      "gen_directory": "../../../../multiplier ip.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "mult_gen_0": ""
+    },
+    "ports": {
+      "P_0": {
+        "type": "data",
+        "direction": "O",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": [
+              "xilinx.com:interface:datatypes:1.0 {",
+              "DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum",
+              "{} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type generated dependency signed format",
+              "bool minimum {} maximum {}} value FALSE}}}} DATA_WIDTH 8",
+              "}"
+            ],
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "A_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "3",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "B_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "3",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "mult_gen_0": {
+        "vlnv": "xilinx.com:ip:mult_gen:12.0",
+        "ip_revision": "22",
+        "xci_name": "design_1_mult_gen_0_0",
+        "xci_path": "ip\\design_1_mult_gen_0_0\\design_1_mult_gen_0_0.xci",
+        "inst_hier_path": "mult_gen_0",
+        "parameters": {
+          "PipeStages": {
+            "value": "0"
+          },
+          "PortAType": {
+            "value": "Unsigned"
+          },
+          "PortAWidth": {
+            "value": "4"
+          },
+          "PortBType": {
+            "value": "Unsigned"
+          },
+          "PortBWidth": {
+            "value": "4"
+          },
+          "Use_Custom_Output_Width": {
+            "value": "false"
+          }
+        }
+      }
+    },
+    "nets": {
+      "A_0_1": {
+        "ports": [
+          "A_0",
+          "mult_gen_0/A"
+        ]
+      },
+      "B_0_1": {
+        "ports": [
+          "B_0",
+          "mult_gen_0/B"
+        ]
+      },
+      "mult_gen_0_P": {
+        "ports": [
+          "mult_gen_0/P",
+          "P_0"
+        ]
+      }
+    }
+  }
+}
