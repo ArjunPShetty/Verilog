@@ -1,0 +1,59 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xE10E3BFBE90162E3",
+      "device": "xc7a35tftg256-1",
+      "gen_directory": "../../../../utility.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2"
+    },
+    "design_tree": {
+      "ilvector_logic_0": ""
+    },
+    "ports": {
+      "A": {
+        "direction": "I"
+      },
+      "B": {
+        "direction": "I"
+      },
+      "Y": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      }
+    },
+    "components": {
+      "ilvector_logic_0": {
+        "vlnv": "xilinx.com:inline_hdl:ilvector_logic:1.0",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "and"
+          }
+        }
+      }
+    },
+    "nets": {
+      "A_1": {
+        "ports": [
+          "A",
+          "ilvector_logic_0/Op1"
+        ]
+      },
+      "B_1": {
+        "ports": [
+          "B",
+          "ilvector_logic_0/Op2"
+        ]
+      },
+      "ilvector_logic_0_Res": {
+        "ports": [
+          "ilvector_logic_0/Res",
+          "Y"
+        ]
+      }
+    }
+  }
+}
