@@ -1,0 +1,53 @@
+$date
+	Sun Jun 14 23:01:30 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb $end
+$var wire 1 ! f $end
+$var reg 1 " a $end
+$var reg 1 # b $end
+$scope module dut $end
+$var wire 1 " a $end
+$var wire 1 $ a_and_notb $end
+$var wire 1 # b $end
+$var wire 1 ! f $end
+$var wire 1 % not_a $end
+$var wire 1 & not_b $end
+$var wire 1 ' nota_and_b $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0'
+1&
+1%
+0$
+0#
+0"
+0!
+$end
+#100
+0&
+1'
+1#
+#200
+1$
+1&
+0'
+0%
+0#
+1"
+#300
+0$
+0&
+1#
+#400

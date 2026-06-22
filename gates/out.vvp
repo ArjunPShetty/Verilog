@@ -1,0 +1,60 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000001f17a7f28d0 .scope module, "tb" "tb" 2 1;
+ .timescale 0 0;
+v000001f17a86bce0_0 .var "a", 0 0;
+v000001f17a86bd80_0 .var "b", 0 0;
+v000001f17a86be20_0 .net "y", 0 0, L_000001f17a7f2f60;  1 drivers
+S_000001f17a7f2a60 .scope module, "dut" "gate" 2 6, 3 1 0, S_000001f17a7f28d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_000001f17a7f2f60 .functor AND 1, v000001f17a86bce0_0, v000001f17a86bd80_0, C4<1>, C4<1>;
+v000001f17a7f2bf0_0 .net "a", 0 0, v000001f17a86bce0_0;  1 drivers
+v000001f17a7f2c90_0 .net "b", 0 0, v000001f17a86bd80_0;  1 drivers
+v000001f17a86bc40_0 .net "y", 0 0, L_000001f17a7f2f60;  alias, 1 drivers
+    .scope S_000001f17a7f28d0;
+T_0 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001f17a86bce0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001f17a86bd80_0, 0, 1;
+    %delay 100, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001f17a86bce0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001f17a86bd80_0, 0, 1;
+    %delay 100, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001f17a86bce0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001f17a86bd80_0, 0, 1;
+    %delay 100, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001f17a86bce0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001f17a86bd80_0, 0, 1;
+    %delay 100, 0;
+    %vpi_call 2 18 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_000001f17a7f28d0;
+T_1 ;
+    %vpi_call 2 22 "$dumpfile", "dump.vcd" {0 0 0};
+    %vpi_call 2 23 "$dumpvars", 32'sb00000000000000000000000000000000 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "testbench.v";
+    "design.v";

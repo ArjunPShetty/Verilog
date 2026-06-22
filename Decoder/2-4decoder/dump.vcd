@@ -1,0 +1,67 @@
+$date
+	Tue Jun 16 13:50:35 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb $end
+$var wire 2 ! y_3 [1:0] $end
+$var wire 2 " y_2 [1:0] $end
+$var wire 2 # y_1 [1:0] $end
+$var wire 2 $ y_0 [1:0] $end
+$var reg 1 % E $end
+$var reg 2 & a [1:0] $end
+$scope module uut $end
+$var wire 1 % E $end
+$var wire 2 ' a [1:0] $end
+$var wire 2 ( y_0 [1:0] $end
+$var wire 2 ) y_1 [1:0] $end
+$var wire 2 * y_2 [1:0] $end
+$var wire 2 + y_3 [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 +
+b0 *
+b0 )
+b1 (
+b0 '
+b0 &
+1%
+b1 $
+b0 #
+b0 "
+b0 !
+$end
+#100
+b0 $
+b0 (
+b1 #
+b1 )
+b1 &
+b1 '
+#200
+b1 "
+b1 *
+b0 #
+b0 )
+b0 !
+b0 +
+b10 &
+b10 '
+#300
+b0 "
+b0 *
+b1 !
+b1 +
+b11 &
+b11 '
+#400
