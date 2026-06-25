@@ -1,0 +1,61 @@
+$date
+	Thu Jun 25 05:37:06 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb $end
+$var wire 4 ! out [3:0] $end
+$var reg 1 " clk $end
+$var reg 1 # rstn $end
+$scope module uut $end
+$var wire 1 " clk $end
+$var wire 1 # rstn $end
+$var reg 4 $ out [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 $
+1#
+1"
+b0 !
+$end
+#50
+0"
+#100
+b1 !
+b1 $
+1"
+0#
+#150
+0"
+#200
+b10 !
+b10 $
+1"
+#250
+0"
+#300
+b11 !
+b11 $
+1"
+#350
+0"
+#400
+b100 !
+b100 $
+1"
+#450
+0"
+#500
+b101 !
+b101 $
+1"
