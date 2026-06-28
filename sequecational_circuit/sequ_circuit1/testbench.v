@@ -3,7 +3,7 @@ reg a, b, c;
 reg clk, rst;
 wire y;
 
-design uut (
+seq uut (
     .a(a),
     .b(b),
     .c(c),

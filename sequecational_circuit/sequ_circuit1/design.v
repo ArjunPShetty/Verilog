@@ -1,4 +1,4 @@
-module design(a, b, c, clk, rst, y);
+module seq(a, b, c, clk, rst, y);
 input a, b, c, clk, rst;
 output y;
 
@@ -7,7 +7,7 @@ reg reg_1, reg_2;
 
 assign com_1 = (a | b) & c;
 assign com_2 = ~reg_1;
-assign y = ~reg_2;
+assign y = ~reg_2; 
 
 always @(posedge clk or posedge rst)
 begin

@@ -1,0 +1,123 @@
+$date
+	Sun Jun 28 12:35:31 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb $end
+$var wire 1 ! y $end
+$var reg 1 " a $end
+$var reg 1 # b $end
+$var reg 1 $ c $end
+$var reg 1 % clk $end
+$var reg 1 & rst $end
+$scope module uut $end
+$var wire 1 " a $end
+$var wire 1 # b $end
+$var wire 1 $ c $end
+$var wire 1 % clk $end
+$var wire 1 ' com_1 $end
+$var wire 1 ( com_2 $end
+$var wire 1 & rst $end
+$var wire 1 ! y $end
+$var reg 1 ) reg_1 $end
+$var reg 1 * reg_2 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+1*
+1)
+0(
+0'
+1&
+0%
+0$
+0#
+0"
+0!
+$end
+#50
+1%
+#100
+0%
+0&
+#150
+1!
+1(
+0*
+0)
+1%
+#200
+0%
+1$
+#250
+0!
+1*
+1%
+#300
+0%
+0$
+1#
+#350
+1%
+#400
+1'
+0%
+1$
+#450
+0(
+1)
+1%
+#500
+0'
+0%
+0$
+0#
+1"
+#550
+1!
+1(
+0*
+0)
+1%
+#600
+1'
+0%
+1$
+#650
+0!
+0(
+1*
+1)
+1%
+#700
+0'
+0%
+0$
+1#
+#750
+1!
+1(
+0*
+0)
+1%
+#800
+1'
+0%
+1$
+#850
+0!
+0(
+1*
+1)
+1%
+#900
+0%
