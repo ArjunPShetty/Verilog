@@ -18,7 +18,7 @@ initial begin
 end
 
 initial begin
-    a <= 2'b00; b <=2'b01; c <=2'b10; d <=2'b11; #100;
+    a <= 2'b00; b <=2'b01; c <=2'b10; d <=2'b11;
     s <= 2'b00; #100;
     s <= 2'b01; #100;
     s <= 2'b10; #100;
