@@ -1,5 +1,5 @@
 $date
-	Mon Jun 22 20:26:38 2026
+	Mon Jul 20 10:26:04 2026
 $end
 $version
 	Icarus Verilog
@@ -8,15 +8,19 @@ $timescale
 	1s
 $end
 $scope module tb $end
-$var wire 1 ! q $end
-$var reg 1 " clk $end
-$var reg 1 # d $end
-$var reg 1 $ rst $end
+$var wire 1 ! q2 $end
+$var wire 1 " q1 $end
+$var reg 1 # clk $end
+$var reg 1 $ d1 $end
+$var reg 1 % d2 $end
+$var reg 1 & rst $end
 $scope module uut $end
-$var wire 1 " clk $end
-$var wire 1 # d $end
-$var wire 1 $ rst $end
-$var reg 1 ! q $end
+$var wire 1 # clk $end
+$var wire 1 $ d1 $end
+$var wire 1 % d2 $end
+$var wire 1 & rst $end
+$var reg 1 " q1 $end
+$var reg 1 ! q2 $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -25,31 +29,47 @@ $dumpall
 $end
 #0
 $dumpvars
-1$
-x#
-0"
+1&
+x%
+x$
+0#
+x"
 x!
 $end
 #50
 0!
-1"
-#100
-0"
-0$
-#150
-x!
-1"
-#200
 0"
 1#
-#250
-1!
-1"
-#300
-0"
+#100
 0#
-#350
-0!
+0&
+#150
+x!
+x"
+1#
+#200
+0#
+1$
+#250
 1"
-#400
+1#
+#300
+0#
+0$
+#350
 0"
+1#
+#400
+0#
+0%
+#450
+0!
+1#
+#500
+0#
+1%
+#550
+1!
+1#
+#600
+0#
